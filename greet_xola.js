@@ -11,10 +11,22 @@
 
 // this should expost the function greet from  the file greet.js
 
+import figlet from 'figlet';
 // in should put/ import some color using chalk
 import chalk from 'chalk';
 //import the greet module that is in the current folder
 import greet from './greet.js'
 
+
 const styledMessage = chalk.bgGreen.black(greet('Xola'));
-console.log(styledMessage)
+console.log(styledMessage);
+
+//using figlet to create a greeting using ASCII art 
+figlet(greet('Xola'), function(err, data) {
+    if (err) {
+        console.log('Something went wrong...');
+        console.dir(err);
+        return;
+    }
+    console.log(data)
+});

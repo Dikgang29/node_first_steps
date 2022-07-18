@@ -22,6 +22,9 @@
     "dev": "",
     "test": ""
   },
-  "devDependencies": {},
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "figlet": "^1.5.2"
+  }
 }
