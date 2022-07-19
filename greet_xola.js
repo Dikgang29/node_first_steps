@@ -18,15 +18,18 @@ import chalk from 'chalk';
 import greet from './greet.js'
 
 
-const styledMessage = chalk.bgGreen.black(greet('Xola'));
-console.log(styledMessage);
+// const styledMessage = chalk.bgGreen.black(greet('Xola'));
+// console.log(styledMessage);
 
 //using figlet to create a greeting using ASCII art 
-figlet(greet('Xola'), function(err, data) {
+figlet(greet('xola'), function(err, data) {
+
+
     if (err) {
         console.log('Something went wrong...');
         console.dir(err);
         return;
     }
-    console.log(data)
+    //should print Hello Xola with background of green and written in back on the console
+    console.log(chalk.bgGreen.black(data))
 });
