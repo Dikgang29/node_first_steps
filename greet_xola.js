@@ -1,16 +1,3 @@
-
-// module.exports = function greet(firstName) {
-
-//     return 'Hello '+ firstName;
-    
-// }
-//  var greet = require('./greet');
-//  console.log(greet('Xola'));
-//  console.log(greet('Dikgang'));
-
-
-// this should expost the function greet from  the file greet.js
-
 import figlet from 'figlet';
 // in should put/ import some color using chalk
 import chalk from 'chalk';
@@ -18,8 +5,7 @@ import chalk from 'chalk';
 import greet from './greet.js'
 
 
-// const styledMessage = chalk.bgGreen.black(greet('Xola'));
-// console.log(styledMessage);
+
 
 //using figlet to create a greeting using ASCII art 
 figlet(greet('xola'), function(err, data) {
