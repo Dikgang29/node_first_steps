@@ -4,9 +4,6 @@ import chalk from 'chalk';
 //import the greet module that is in the current folder
 import greet from './greet.js'
 
-
-
-
 //using figlet to create a greeting using ASCII art 
 figlet(greet('xola'), function(err, data) {
 
